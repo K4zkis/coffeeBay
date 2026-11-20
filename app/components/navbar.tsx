@@ -1,0 +1,33 @@
+import React from 'react';
+import '../styles/navbar.css';
+
+export default function Navbar() {
+    return(
+        <nav className="navbar">
+            <div className="navbar-left">
+                <a href="/" className="logo">
+                    CoffeeBayTaiwan
+                </a>
+            </div>
+
+            <div className="navbar-center">
+                <ul className="nav-links">
+                    <li><a href="/shop">Shop</a></li>
+                    <li><a href="/coffeeknowledge">Coffeeknowledge</a></li>
+                    <li><a href="/brewtools">Brewtools</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+
+            <div className="navbar-right">
+                <a href="/cart" className="cart-icon">
+                    <i className="fas fa-shopping-cart"></i>
+                    <span className="cart-count">0</span>
+                </a>
+                <a href="/account" className="user-icon">
+                    <i className="fas fa-user"></i>
+                </a>
+            </div>
+        </nav>
+    )
+}
